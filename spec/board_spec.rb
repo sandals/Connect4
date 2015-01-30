@@ -7,15 +7,14 @@ RSpec.describe ConnectFour::Board do
 		ascii = board.display
 
 		blank_board = <<-EOF
-[][][][][][][]
-[][][][][][][]
-[][][][][][][]
-[][][][][][][]
-[][][][][][][]
-[][][][][][][]
+[ ][ ][ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ][ ][ ]
+[ ][ ][ ][ ][ ][ ][ ]
 		EOF
 
 		expect(ascii).to eq(blank_board)
 	end
 end
-
